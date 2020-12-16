@@ -1,0 +1,125 @@
+
+.div000{
+	width: 100%;
+	height: 150px;
+	background-color: lightgrey;
+	text-align: center;    
+}
+
+/*000*/
+/*盒子容器*/
+.flex{
+display: -webkit-flex;
+display: flex;
+}
+
+
+	/*001:可省略;*/
+	/*flex-direction+flex-wrap:排列方式（水平排列，垂直排列）+是否换行*/
+	.flex-flow-row{
+		/*默认值为row nowrap。*/
+		-webkit-flex-flow: row nowrap;
+		flex-flow:row nowrap; 	
+	}
+	.flex-flow-col{
+		-webkit-flex-flow: column nowrap;
+		flex-flow:column nowrap; 	
+	}
+
+
+	/*002：常用--justify-content-around*/
+	/*主轴上的对齐方式*/
+	.justify-content-start {
+		/*默认值：左对齐*/
+		-webkit-justify-content:flex-start;
+		justify-content:flex-start;
+	}
+	.justify-content-end {
+		/*右对齐*/
+		-webkit-justify-content:flex-end;
+		justify-content:flex-end;
+	}
+	.justify-content-center {
+		/*中间对齐*/
+		-webkit-justify-content:center;
+		justify-content:center;
+	}	
+	.justify-content-between {
+		/*两端对齐，项目之间的间隔都相等（两端没空）*/
+		-webkit-justify-content:space-between;
+		justify-content:space-between;
+	}
+	.justify-content-around {
+		/*每个项目两侧的间隔相等（两端有空）*/
+		-webkit-justify-content:space-around;
+		justify-content:space-around;
+	}
+
+
+	/*003：常用--align-items-center*/
+	/*交叉轴上的对齐方式*/
+	.align-items-start{
+		/*交叉轴的起点对齐*/
+		-webkit-align-items:flex-start;
+		align-items:flex-start;
+	}
+	.align-items-end{
+		/*交叉轴的终点对齐*/
+		-webkit-align-items:flex-end;
+		align-items:flex-end;
+	}
+	.align-items-center{
+		/*交叉轴的中点对齐*/
+		-webkit-align-items:center;
+		align-items:center;
+	}
+	.align-items-baseline{
+		/*项目的第一行文字的基线对齐。*/
+		-webkit-align-items:baseline;
+		align-items:baseline;
+	}
+	.align-items-stretch{
+		/*默认值：轴线占满整个交叉轴。*/
+		-webkit-align-items:stretch;
+		align-items:stretch;
+	}
+
+
+	/*多根轴的对齐方式*/
+	/*	.align-content{
+
+	}*/
+
+		/*项目的属性*/
+		.flex-item{
+			/*可放大，可缩小，分配剩余空间的1份*/
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.align-self-start{
+			/*同align-items，覆盖align-items*/
+			-webkit-align-self:flex-start;
+			align-self:flex-start;
+		}
+		.align-self-end{
+			/*同align-items，覆盖align-items*/
+			-webkit-align-self:flex-end;
+			align-self:flex-end;
+		}
+		.align-self-center{
+			/*同align-items，覆盖align-items*/
+			-webkit-align-self:center;
+			align-self:center;
+		}
+		.align-self-baselin{
+			/*同align-items，覆盖align-items*/
+			-webkit-align-self:baseline;
+			align-self:baseline;
+		}
+		.align-self-stretch{
+			/*同align-items，覆盖align-items*/
+			-webkit-align-self:stretch;
+			align-self:stretch;
+		}
+
+
