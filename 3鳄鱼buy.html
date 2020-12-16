@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/> -->
+        <!-- <meta name="format-detection" content="telephone=no,email=no,date=no,address=no"> -->
+        <title>3鳄鱼</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--         <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" type="text/css" href="./css/flex.css" />
+        <link rel="stylesheet" type="text/css" href="./css/font.css" />
+        <link rel="stylesheet" type="text/css" href="./css/checkout.css" />
+        <style type="text/css">
+            .top-right{              
+                width: 100% ;
+                position: absolute;
+                right: 5vw;
+            }
+            .Black{ /*黑体加粗*/
+                font-family: 'Archivo Black', sans-serif;
+            }
+            .Denk{ /*变形黑体*/
+                font-family: 'Denk One', sans-serif;
+            }
+            .Delius{ /*类似行书*/
+                font-family: 'Delius', sans-serif;
+            }
+            .Metrophobic{ /*普通黑体*/
+                font-family: 'Metrophobic', sans-serif;
+            }          
+            .logo{
+                width: 20vw;
+                position:  absolute;
+                top:0.5vw;
+                left: 40vw;
+            }
+
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    /*border-radius: 50%;*/
+    border: 1px solid #000000;
+    text-indent: .15em;
+    line-height: 1; 
+}
+
+     input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+        color:  #000000FF;
+        /* placeholder字体大小  */
+        font-size: 1.1vw;
+        text-align: center;
+     } 
+     .big{
+                text-align: center;
+                width: 10vw;
+                /*height: 30px;*/
+                /*border-radius: 15px;*/
+                margin: 10px 0;
+                background: url(./img/search.png) no-repeat;
+                background-color: white;
+                background-position: 3px;
+                padding-left: 30px;
+                border: 1px solid black;
+                outline: none;
+
+     } 
+
+
+
+        </style>
+    </head>
+    <body >
+        <!-- <div style="background-color: #FFFFFFFF;width: 100%;height:1.3vw"></div> -->
+        <div class="top-right Delius" > <!-- 脱离正常文本流，正常流中的位置不再存在。居右 -->
+            <div>
+                <table style="position: absolute;right: 5vw;top: 1vw; font-size: 0.6vw">
+                    <tr>
+                        <td style="width: 4vw; white-space: nowrap;">Find a store</td>
+                        <td style="width: 2vw"></td>
+                        <td style="width: 4vw;white-space: nowrap;">Unite States</td>
+                        <td style="width: 2vw"></td>
+                        <td style="width: 4vw;white-space: nowrap;">Contact Us</td>
+                    </tr>
+                </table>
+            </div>    
+        </div>
+
+        <div style="background-color: #f8f3ef;"> <!-- 脱离正常文本流，正常流中的位置不再存在。居中 -->
+            <img src="./img/WE CARE logo黑字.png" class="logo">
+        </div>
+
+        <div class="Denk" > <!-- 脱离正常文本流，正常流中的位置不再存在。居左 -->
+            <div>
+                <table style="position: absolute;left: 4vw;top: 5vw;font-size: 1.1vw">
+                    <tr>
+                        <td style="width: 4vw; white-space: nowrap;">Menu</td>
+                        <td style="width: 2vw"></td>
+                        <td style="white-space: nowrap;"><input class="big" type="search" name="user_search" placeholder="Search" style=""></td>
+
+                    </tr>
+                </table>
+            </div> 
+        </div>
+        <div class="Denk" > <!-- 脱离正常文本流，正常流中的位置不再存在。居右 -->
+            <div>
+                <table style="position: absolute;right:  4vw;top: 5vw;font-size: 1.1vw">
+                    <tr>
+
+                        <td style="width: 4vw; white-space: nowrap;" onclick="add()">Account</td>
+                        <td style="width: 4vw; white-space: nowrap;"></td>
+                        <td style="width: 4vw; white-space: nowrap;" onclick="add()">Cart</td>
+                        <td style="width: 4vw; white-space: nowrap;"></td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+        <div style="height: 10vw;background-color: #f8f3ef;"></div> <!-- 占位 -->
+        <div class="Denk" style="background-color: #f8f3ef;font-size: 0.9vw "><div style="position: relative;left: 4vw;background-color: #f8f3ef; " >←Back</div></div>
+
+        <div style="background-color: #f8f3ef;width: 100%;height: 50vw">
+            <div class="flex flex-flow-col" style="background-color: #f8f3ef;position: absolute;top: 16vw;left: 4.3vw;"><!-- 图片 -->
+                <div style="height: 8.4vw">
+                    <div><img src="./img/siamese 2.jpg" style="height: 8.4vw"></div>                               
+                </div>
+                <div style="height:3vw"></div>
+                <div style="height: 8.4vw">
+                    <div><img src="./img/siamese 3 baby.jpg" style="height: 8.4vw"></div>                               
+                </div>
+                <div style="height:3vw"></div>
+                <div style="height: 8.4vw">
+                    <div><img src="./img/siamese 4.jpg" style="height: 8.4vw"></div>                               
+                </div>  
+                <div style="height:3vw"></div>
+                <div style="height: 8.4vw">
+                    <div><img src="./img/siamese 5.jpeg" style="height: 8.4vw"></div>                               
+                </div>         
+            </div>
+
+            <div class="flex " style="background-color: #f8f3ef;position: absolute;top: 16.5vw;left: 20vw;"><!-- 图片 -->
+                <div style="">
+                    <div><img src="./img/siamese croco.jpg" style="width: 45.5vw"></div>                               
+                </div>        
+            </div>
+            <div class="flex flex-flow-col" style="background-color: #f8f3ef;position: absolute;top: 18vw;left: 70vw;"><!-- 图片 -->
+                <div style="font-size:1.6vw" class="Delius">
+                    Crocodile Rescue Plan
+                </div>
+                <div style="height: 1vw">
+                                 
+                </div> 
+                <div style="font-size:1.6vw" class="Delius">
+                    $6.66              
+                </div>
+                <div style="height: 1vw">
+                                  
+                </div> 
+                <div style="font-size:1.2vw">
+                    located in SE ASIA.              
+                </div> 
+                <div style="font-size:1.2vw">
+                    2 year old             
+                </div> 
+                <div style="font-size:1.2vw">
+                    artificial propagation desperately need              
+                </div> 
+                <div style="font-size:1.2vw">
+                    medication            
+                </div>
+                <div style="height: 1vw">
+                                  
+                </div>
+                <div style="font-size:1.5vw" >
+                    Rescue Plan                  
+                </div>
+                <div style="height: 1vw">
+                                  
+                </div>
+                <div style="height: 5vw;font-size:1.5vw">
+                <span style="border-left:  1px solid #bcb9b4;width: 11vw;height: 100%; border-right:1px solid #bcb9b4;">&nbsp;back to nature&nbsp;</span>
+
+                <span style="border-right: 1px solid #bcb9b4;width: 11vw">&nbsp;&nbsp;&nbsp;&nbsp; volunteer&nbsp;&nbsp;&nbsp;&nbsp;</span>                  
+                </div>                                                         
+            </div>
+            <div style="position: absolute;top: 55vw;right: 7vw;background-color: #000000FF;color: #FFFFFFFF;width: 15.5vw;height: 4vw;font-size:1.8vw" class="flex justify-content-center align-items-center " onclick="add5()">
+                Add To Cart
+            </div> 
+            <div style="position: absolute;top: 60vw;right: 4.4vw;" onclick="add5()">
+                <span class='tg-list-item'>
+                    <input class='tgl tgl-light' id='cb1' type='checkbox'>
+                    <label class='tgl-btn' for='cb1'></label>
+                </span>
+            </div>
+
+        </div>
+        <div style="background-color: #f8f3ef;height: 10vw"></div>
+    </body>
+    <script src="./js/Domready.js"></script>
+    <script type="text/javascript" >
+
+        function add() {
+            window.location.href='./5end.html';
+        } 
+ 
+        function add5() {
+            window.location.href='./4鳄鱼cart.html';
+        }     
+
+    </script>
+
+
+ 
